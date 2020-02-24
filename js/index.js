@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
             showPanel.addEventListener('click', function(e){
                 if (e.target.className === 'like-btn'){
                     e.preventDefault()
-                    const user = {"id":1, "username":"pouros"}
-                    const userLikes = book.users
+                    const user1 = {"id":1, "username":"pouros"}
+                    const userLikes = book.users.filter(user => user.username !== 'pouros')
                     if (e.target.innerText === 'Like'){
-                        userLikes.push(user)
+                        userLikes.push(user1)
                         fetch(`http://localhost:3000/books/${e.target.dataset.id}`,{
                         method: "PATCH",
                         headers: {
@@ -38,16 +38,15 @@ document.addEventListener("DOMContentLoaded", function() {
                         },
                         body: JSON.stringify({'users':userLikes})
                         })
-                        .then(listLike(user))
+                        .then(listLike(user1))
                         .then(e.target.innerText = 'Unlike')
                     } else if (e.target.innerText === 'Unlike'){
-                        const newLikes = userLikes.filter(user => user.username !== 'pouros')
                         fetch(`http://localhost:3000/books/${e.target.dataset.id}`,{
                         method: "PATCH",
                         headers: {
                             "content-type": "application/json"
                         },
-                        body: JSON.stringify({'users':newLikes})
+                        body: JSON.stringify({'users':userLikes})
                         })
                         .then(showPanel.removeChild(showPanel.lastChild))
                         .then(e.target.innerText = 'Like')
