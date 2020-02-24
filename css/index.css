@@ -2,3 +2,8 @@ body {
 	display: grid;
 	grid-template-columns: 2fr 8fr
 }
+.book-image {
+	justify-self: left;
+	height: 12rem;
+	width: auto;
+  }
