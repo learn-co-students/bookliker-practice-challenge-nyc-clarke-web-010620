@@ -5,16 +5,7 @@
       "title": "Picture Perfect",
       "description": "When her seven-year-old nephew, a hemophiliac, mysteriously disappears during their camping trip, pediatrician Lorrie Ryan races against time to find the missing boy with the help of FBI agent Stuart Saunders. Previously published as Panda Bear Is Critical. Reprint.",
       "img_url": "http://books.google.com/books/content?id=CEMZ1OoPDIAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
-      "users": [
-        {
-          "id": 2,
-          "username": "auer"
-        },
-        {
-          "id": 8,
-          "username": "goodwin"
-        }
-      ]
+      "users": {}
     },
     {
       "id": 2,
@@ -23,16 +14,8 @@
       "img_url": "http://books.google.com/books/content?id=pkwCDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
         {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 4,
-          "username": "batz"
-        },
-        {
-          "id": 6,
-          "username": "steuber"
+          "id": 1,
+          "username": "pouros"
         }
       ]
     },
@@ -75,16 +58,8 @@
       "img_url": "http://books.google.com/books/content?id=bNYgCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "users": [
         {
-          "id": 10,
-          "username": "macejkovic"
-        },
-        {
-          "id": 4,
-          "username": "batz"
-        },
-        {
-          "id": 8,
-          "username": "goodwin"
+          "id": 1,
+          "username": "pouros"
         }
       ]
     },
